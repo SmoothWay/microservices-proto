@@ -3,7 +3,7 @@
 SERVICE_NAME=$1
 RELEASE_VERSION=$2
 
-git fetch --all && git checkout main
+git fetch --all && git checkout master
 
 sudo apt-get install -y protobuf-compiler golang-goprotobuf-dev
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
